@@ -3,48 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Vaishnavi | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #111827;
+            position: sticky;
+            top: 0;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero h2 {
+            color: #cbd5e1;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #94a3b8;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #38bdf8;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            color: #cbd5e1;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #1e293b;
+            padding: 15px 25px;
+            border-radius: 10px;
+            border: 1px solid #334155;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: center;
+        }
+
+        .project-card {
+            max-width: 600px;
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .project-card h3 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            color: #cbd5e1;
+        }
+
+        .contact {
+            text-align: center;
+            color: #cbd5e1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111827;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Hi, I'm Vaishnavi 👋</h1>
+    <nav>
+        <h2>Vaishnavi</h2>
 
-    <h2>Full Stack Developer</h2>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-    <p>
-        Welcome to my personal portfolio website.
-    </p>
+    <section class="hero" id="home">
+        <h1>Hi, I'm <span>Vaishnavi</span> 👋</h1>
 
-    <h2>About Me</h2>
+        <h2>Full Stack Developer</h2>
 
-    <p>
-        I am pursuing B.E. in Electronics and Communication Engineering
-        at Idhaya Engineering College for Women.
-    </p>
+        <p>
+            B.E. Electronics and Communication Engineering student
+            passionate about Full Stack Development, AI/ML and UI/UX Design.
+        </p>
 
-    <h2>Skills</h2>
+        <a href="#projects" class="btn">View My Projects</a>
+    </section>
 
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>React</li>
-        <li>MySQL</li>
-    </ul>
+    <section id="about">
+        <h2>About Me</h2>
 
-    <h2>Projects</h2>
+        <div class="about">
+            <p>
+                I am currently pursuing B.E. in Electronics and Communication
+                Engineering at Idhaya Engineering College for Women.
+                I enjoy building websites and learning new technologies.
+                I am interested in Full Stack Development and AI/ML.
+            </p>
+        </div>
+    </section>
 
-    <h3>Diabetes Prediction System</h3>
+    <section id="skills">
+        <h2>My Skills</h2>
 
-    <p>
-        A machine learning based web application for diabetes prediction.
-    </p>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">React</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">FastAPI</div>
+            <div class="skill">Git & GitHub</div>
+        </div>
+    </section>
 
-    <h2>Contact</h2>
+    <section id="projects">
+        <h2>My Projects</h2>
 
-    <p>Email: veerasamyvaishu2@gmail.com</p>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Diabetes Prediction System</h3>
+
+                <p>
+                    A machine learning based web application that predicts
+                    diabetes using health-related parameters.
+                    The project uses Logistic Regression, FastAPI,
+                    HTML, CSS and JavaScript.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="contact">
+            <p>Email: veerasamyvaishu2@gmail.com</p>
+            <p>Location: Cuddalore, Tamil Nadu</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Vaishnavi. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
